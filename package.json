@@ -13,7 +13,8 @@
         "source-map-support": "^0.4.18",
         "ts-node": "7.0.1",
         "tslint-language-service": "^0.9.9",
-        "typescript": "^4.2.0-dev.20201219"
+        "typescript": "^4.0.0-dev.20201219",
+        "tslint": "^6.1.3"
     },
     "scripts": {
         "prepare": "lerna run clean && yarn build && yarn bundle",
@@ -34,8 +35,5 @@
     "workspaces": [
         "server",
         "example"
-    ],
-    "dependencies": {
-        "tslint": "^6.1.3"
-    }
+    ]
 }
