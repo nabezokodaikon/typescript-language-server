@@ -26,7 +26,7 @@ export class Deferred<T> {
     reject: (err?: unknown) => void;
 
     promise = new Promise<T>((resolve, reject) => {
-        this.resolve = obj => {
+        this.resolve = (obj: T) => {
             clearTimeout(this.timer);
             resolve(obj);
         }
